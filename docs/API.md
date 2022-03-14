@@ -56,26 +56,30 @@
 }
 ```
 
-## TODO 获取用户信息
+## 获取用户信息
 
 ### url
 
-`/api/user/userinfo`
+`/api/user/info`
 
 ### method
 
-``
+`get`
 
 ### request body
 
-```js
-
-```
+无
 
 ### response body
 
 ```js
-
+{
+  errno: 0,
+  data:{
+    username: 'xxx',
+  }
+  message: 'errno !== 0 时的提示信息'
+}
 ```
 
 ## 新建收货地址

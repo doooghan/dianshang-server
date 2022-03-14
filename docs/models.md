@@ -48,7 +48,8 @@
   imgUrl:'xxx.png',
   sales:10,
   price:33.6,
-  oldPrice:100
+  oldPrice:100,
+  tabs: ['all', 'seckill'] // 左侧 tab 类型
 }
 ```
 
