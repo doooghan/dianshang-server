@@ -96,6 +96,7 @@
 
 ```js
 {
+  username: 'xxx',
   city:'北京',
   department:'xx小区',
   houseNumber:'门牌号',
@@ -150,7 +151,7 @@
 }
 ```
 
-## 获取单个收货地址
+## 根据 id 获取单个收货地址
 
 ### url
 

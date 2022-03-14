@@ -22,8 +22,8 @@ db.on('error', (err) => {
   console.log('mongodb connect error', err)
 })
 
-db.once('open', () => {
-  console.log('success')
-})
+// db.once('open', () => {
+//   console.log('success')
+// })
 
 module.exports = mongoose
