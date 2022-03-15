@@ -1,6 +1,7 @@
 /**
  * @description 登陆校验
  */
+const { ErrorModel } = require('../res-model/index')
 
 module.exports = async (ctx, next) => {
   const session = ctx.session
@@ -8,9 +9,5 @@ module.exports = async (ctx, next) => {
     await next()
     return
   }
-
-  ctx.body = {
-    errno: -1,
-    message: '校验失败',
-  }
+  ctx.body = ErrorModel(10002, '登陆校验失败')
 }
