@@ -1,5 +1,5 @@
 /**
- * @description 测试 user model
+ * @description 模拟 user 数据操作
  */
 
 const User = require('../../models/User')

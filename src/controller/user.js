@@ -15,6 +15,12 @@ async function register(username, password) {
   return newUser
 }
 
+/**
+ * 登陆
+ * @param {String} username 用户名
+ * @param {String} password 密码
+ * @returns 登陆结果 Boolean
+ */
 async function login(username, password) {
   const user = await User.findOne({
     username,

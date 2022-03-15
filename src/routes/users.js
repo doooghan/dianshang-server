@@ -5,6 +5,7 @@ const { SuccessModel, ErrorModel } = require('../res-model/index')
 
 router.prefix('/api/user')
 
+// 注册
 router.post('/register', async (ctx, next) => {
   const { username, password } = ctx.request.body
   try {
@@ -16,6 +17,7 @@ router.post('/register', async (ctx, next) => {
   }
 })
 
+// 登陆
 router.post('/login', async (ctx, next) => {
   const { username, password } = ctx.request.body
   const res = await login(username, password)
