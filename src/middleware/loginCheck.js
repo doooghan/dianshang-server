@@ -9,5 +9,5 @@ module.exports = async (ctx, next) => {
     await next()
     return
   }
-  ctx.body = ErrorModel(10002, '登陆校验失败')
+  ctx.body = new ErrorModel(10002, '登陆校验失败')
 }
