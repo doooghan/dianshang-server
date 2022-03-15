@@ -43,7 +43,7 @@
 ```js
 {
   _id:'商品id',
-  shopId:'商店id' // 和商店产生关联
+  shopId:'商店id', // 和商店产生关联
   name:'番茄 250g每份',
   imgUrl:'xxx.png',
   sales:10,
@@ -53,6 +53,36 @@
 }
 ```
 
-## 订单 TODO
+## 订单
 
-TODO
+```js
+{
+  _id:'订单id',
+  username: 'xxx',
+  shopId: '商店id',
+  shopName: 'wtm',
+  isCanceled: false,
+  address:{
+    username:'15200005565',
+    city:'北京',
+    department:'xx小区',
+    houseNumber:'门牌号',
+    name:'张三',
+    phone:'13211112222',
+  },
+  products: [
+    {
+      product: {
+        shopId:'商店id',
+        name:'番茄 250g每份',
+        imgUrl:'xxx.png',
+        sales:10,
+        price:33.6,
+        oldPrice:100,
+        tabs: ['all', 'seckill'] // 左侧 tab 类型
+      },
+      orderSales: 10,
+    },
+  ],
+}
+```

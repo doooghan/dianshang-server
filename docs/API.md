@@ -332,8 +332,8 @@
 
 ```js
 {
-  addressId:1, //地址 id
-  shopId:1, // 商店 id
+  addressId:'', //地址 id
+  shopId:'', // 商店 id
   shopName:'',
   isCanceled:False, // 是否被取消
   products:[
@@ -351,7 +351,7 @@
 {
   errno: 0,
   data:{
-    _id: 1 // 订单 id
+    _id: '' // 订单 id
   },
   message: 'errno !== 0 时的提示信息'
 }
