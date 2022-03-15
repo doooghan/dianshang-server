@@ -1,13 +1,24 @@
 const router = require('koa-router')()
 
-router.prefix('/users')
+const { register } = require('../controller/user')
 
-router.get('/', function (ctx, next) {
-  ctx.body = 'this is a users response!'
-})
+router.prefix('/api/user')
 
-router.get('/bar', function (ctx, next) {
-  ctx.body = 'this is a users/bar response'
+router.post('/register', async (ctx, next) => {
+  const { username, password } = ctx.request.body
+  try {
+    const newUser = await register(username, password)
+    ctx.body = {
+      errno: 0,
+      data: newUser,
+    }
+  } catch (error) {
+    console.error(error)
+    ctx.body = {
+      errno: 10001,
+      message: `注册失败 - error:${error.message}`,
+    }
+  }
 })
 
 module.exports = router
