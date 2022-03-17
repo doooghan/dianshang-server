@@ -9,7 +9,7 @@ const Product = require('../../models/Product')
   // await Product.create({
   //   shopId: '622f573c0ae78d402b99b10b',
   //   name: '苹果 250g / 份',
-  //   imgUrl: 'images/product/apple.jpeg',
+  //   imgUrl: 'http://localhost:3000/images/product/apple.jpeg',
   //   sales: 10,
   //   price: 33.6,
   //   oldPrice: 39.6,
@@ -18,7 +18,7 @@ const Product = require('../../models/Product')
   // await Product.create({
   //   shopId: '622f573c0ae78d402b99b10b',
   //   name: '葡萄 500g / 份',
-  //   imgUrl: 'images/product/grape.jpg',
+  //   imgUrl: 'http://localhost:3000/images/product/grape.jpg',
   //   sales: 10,
   //   price: 99.6,
   //   oldPrice: 119.6,
@@ -27,7 +27,7 @@ const Product = require('../../models/Product')
   // await Product.create({
   //   shopId: '622f573c0ae78d402b99b10b',
   //   name: '桃子 250g / 份',
-  //   imgUrl: 'images/product/peach.jpg',
+  //   imgUrl: 'http://localhost:3000/images/product/peach.jpg',
   //   sales: 110,
   //   price: 12.6,
   //   oldPrice: 22.6,
@@ -36,7 +36,7 @@ const Product = require('../../models/Product')
   // await Product.create({
   //   shopId: '622f573c0ae78d402b99b10e',
   //   name: '西瓜 250g / 份',
-  //   imgUrl: 'images/product/watermelon.jpg',
+  //   imgUrl: 'http://localhost:3000/images/product/watermelon.jpg',
   //   sales: 10,
   //   price: 199.9,
   //   oldPrice: 299.9,

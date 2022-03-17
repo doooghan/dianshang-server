@@ -4,11 +4,7 @@
 const mongoose = require('mongoose')
 
 const url = 'mongodb://localhost:27017'
-const dbName = 'testdb'
-
-// // 配置
-// mongoose.set('useCreateIndex', true)
-// mongoose.set('useFindAndModify', false)
+const dbName = 'dianshang1'
 
 // 连接
 mongoose.connect(`${url}/${dbName}`, {

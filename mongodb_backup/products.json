@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "622f5b4589b5c4d27b8065da"
+  },
+  "shopId": "622f573c0ae78d402b99b10b",
+  "name": "苹果 250g / 份",
+  "imgUrl": "http://localhost:3000/images/product/apple.jpeg",
+  "sales": 10,
+  "price": 33.6,
+  "oldPrice": 39.6,
+  "tabs": [
+    "all",
+    "seckill",
+    "fruit"
+  ],
+  "createdAt": {
+    "$date": "2022-03-14T15:12:05.425Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-14T15:12:05.425Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "622f5b4589b5c4d27b8065dd"
+  },
+  "shopId": "622f573c0ae78d402b99b10b",
+  "name": "葡萄 500g / 份",
+  "imgUrl": "http://localhost:3000/images/product/grape.jpg",
+  "sales": 10,
+  "price": 99.6,
+  "oldPrice": 119.6,
+  "tabs": [
+    "all",
+    "seckill",
+    "fruit"
+  ],
+  "createdAt": {
+    "$date": "2022-03-14T15:12:05.646Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-14T15:12:05.646Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "622f5b4589b5c4d27b8065df"
+  },
+  "shopId": "622f573c0ae78d402b99b10b",
+  "name": "桃子 250g / 份",
+  "imgUrl": "http://localhost:3000/images/product/peach.jpg",
+  "sales": 110,
+  "price": 12.6,
+  "oldPrice": 22.6,
+  "tabs": [
+    "all",
+    "seckill",
+    "fruit"
+  ],
+  "createdAt": {
+    "$date": "2022-03-14T15:12:05.651Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-14T15:12:05.651Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "622f5b4589b5c4d27b8065e1"
+  },
+  "shopId": "622f573c0ae78d402b99b10e",
+  "name": "西瓜 250g / 份",
+  "imgUrl": "http://localhost:3000/images/product/watermelon.jpg",
+  "sales": 10,
+  "price": 199.9,
+  "oldPrice": 299.9,
+  "tabs": [
+    "all",
+    "seckill",
+    "fruit"
+  ],
+  "createdAt": {
+    "$date": "2022-03-14T15:12:05.654Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-14T15:12:05.654Z"
+  },
+  "__v": 0
+}]

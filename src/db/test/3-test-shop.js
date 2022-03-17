@@ -8,7 +8,7 @@ const Shop = require('../../models/Shop')
   // 新建两个商店
   // await new Shop({
   //   name: '沃尔玛',
-  //   imgUrl: 'images/shop/wmt.jepg',
+  //   imgUrl: 'http://localhost:3000/images/shop/wmt.jepg',
   //   sales: 1000, // 月售
   //   expressLimit: 0, // 起送价格
   //   expressPrice: 5, // 快递价格
@@ -16,7 +16,7 @@ const Shop = require('../../models/Shop')
   // }).save()
   // await new Shop({
   //   name: 'Sam会员商店',
-  //   imgUrl: 'images/shop/sam.jepg',
+  //   imgUrl: 'http://localhost:3000/images/shop/sam.jepg',
   //   sales: 1000, // 月售
   //   expressLimit: 0, // 起送价格
   //   expressPrice: 5, // 快递价格

@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "622f573c0ae78d402b99b10b"
+  },
+  "name": "沃尔玛",
+  "imgUrl": "http://localhost:3000/images/shop/wmt.jpeg",
+  "sales": 1000,
+  "expressLimit": 0,
+  "expressPrice": 5,
+  "slogan": "VIP尊享满89元减4元运费券",
+  "createdAt": {
+    "$date": "2022-03-14T14:54:52.194Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-14T14:54:52.194Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6232ece95a3926b4a0214d25"
+  },
+  "name": "Sam会员商店",
+  "imgUrl": "http://localhost:3000/images/shop/sam.jpeg",
+  "sales": 1000,
+  "expressLimit": 0,
+  "expressPrice": 5,
+  "slogan": "联合利华买一送一",
+  "createdAt": {
+    "$date": "2022-03-14T14:54:52.433Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-14T14:54:52.433Z"
+  },
+  "__v": 0
+}]

@@ -12,7 +12,7 @@ const User = require('../../models/User')
   // })
   // await u.save()
 
-  // 查询
+  // 登陆
   const u2 = await User.findOne({
     username: '13277779999',
   })
