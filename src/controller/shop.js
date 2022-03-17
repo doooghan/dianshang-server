@@ -18,7 +18,7 @@ async function getHotList() {
  * @returns Shop
  */
 async function getShopInfo(id) {
-  const shop = await Shop.findById({ _id: id })
+  const shop = await Shop.findById(id)
   return shop
 }
 
