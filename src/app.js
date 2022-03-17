@@ -20,7 +20,7 @@ onerror(app)
 // cors配置
 app.use(
   cors({
-    origin: 'http://localhost:8000', // 前端origin
+    origin: 'http://localhost:8080', // 前端origin
     credentials: true, // 允许跨域带cookie
   })
 )
