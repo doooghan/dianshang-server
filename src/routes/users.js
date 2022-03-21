@@ -1,6 +1,7 @@
 const router = require('koa-router')()
 
-const { register, login } = require('../controller/user')
+const { register, login, getInfo } = require('../controller/user')
+const loginCheck = require('../middleware/loginCheck')
 const { SuccessModel, ErrorModel } = require('../res-model/index')
 
 router.prefix('/api/user')
@@ -27,6 +28,15 @@ router.post('/login', async (ctx, next) => {
   } else {
     ctx.body = new ErrorModel(10002, '用户名或密码错误')
   }
+})
+
+// 获取用户信息
+router.get('/info/', loginCheck, async (ctx, next) => {
+  const userInfo = ctx.session.userInfo
+  const username = userInfo.username
+
+  const res = await getInfo(username)
+  ctx.body = new SuccessModel(res)
 })
 
 module.exports = router

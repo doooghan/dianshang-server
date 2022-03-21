@@ -76,6 +76,7 @@
 {
   errno: 0,
   data:{
+    _id:'6232ec5f0a481957e0c8a0cb'
     username: 'xxx',
   }
   message: 'errno !== 0 时的提示信息'
@@ -358,3 +359,52 @@
 ```
 
 ## 获取订单列表
+### url
+
+`/api/order`
+
+### method
+
+`get`
+
+### request body
+
+无
+
+### response body
+
+```js
+{
+  errno: 0,
+  data:{
+    _id:'订单id',
+    username: 'xxx',
+    shopId: '商店id',
+    shopName: 'wtm',
+    isCanceled: false,
+    address:{
+      username:'15200005565',
+      city:'北京',
+      department:'xx小区',
+      houseNumber:'门牌号',
+      name:'张三',
+      phone:'13211112222',
+    },
+    products: [
+      {
+        product: {
+          shopId:'商店id',
+          name:'番茄 250g每份',
+          imgUrl:'xxx.png',
+          sales:10,
+          price:33.6,
+          oldPrice:100,
+          tabs: ['all', 'seckill'] // 左侧 tab 类型
+        },
+        orderSales: 10,
+      },
+    ],
+  },
+  message: 'errno !== 0 时的提示信息'
+}
+```

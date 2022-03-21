@@ -32,7 +32,21 @@ async function login(username, password) {
   return false
 }
 
+/**
+ * 获取用户信息
+ * @param {String} username 用户名
+ * @returns
+ */
+async function getInfo(username) {
+  const user = await User.findOne({
+    username,
+  })
+  user.password = ''
+  return user
+}
+
 module.exports = {
   register,
   login,
+  getInfo,
 }

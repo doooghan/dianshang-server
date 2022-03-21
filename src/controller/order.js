@@ -36,4 +36,14 @@ async function createOrder(username, data = {}) {
   return newOrder
 }
 
-module.exports = { createOrder }
+/**
+ *  获取订单列表
+ * @param {String} username
+ * @returns order List
+ */
+async function getOrderList(username) {
+  const list = Order.find({ username }).sort({ updatedAt: -1 })
+  return list
+}
+
+module.exports = { createOrder, getOrderList }
